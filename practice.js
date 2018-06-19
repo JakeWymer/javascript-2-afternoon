@@ -15,6 +15,11 @@
 */
 
 //Code here
+let me = {
+  name: 'Jake',
+  age: 23
+}
+alert(me.name);
 
 
 
@@ -26,7 +31,14 @@
 */
 
 //Code here
-
+let favoriteThings =  {
+  band: 'The Doors',
+  food: 'BBQ',
+  person: 'Ma',
+  book: 'The Hobbit',
+  movie: 'That Thing You Do',
+  holiday: 'Halloween'
+}
 
 
 /*
@@ -34,7 +46,8 @@
 */
 
 //Code here
-
+favoriteThings.car = 'Dunno'
+favoriteThings.brand = 'Brand of what?'
 
 
 /*
@@ -42,7 +55,8 @@
 */
 
 //Code here
-
+favoriteThings.food = 'Chicken Nuggets';
+favoriteThings.book = 'Harry Potter'
 
 
 ////////// PROBLEM 3 //////////
@@ -56,15 +70,18 @@
 */
 
 //Code here
+let backPack = {};
+let item = 'firstPocket';
 
-
+backPack[item] = 'chapstick';
+backPack.color = 'red'; 
 
 /*
   After you do the above, alert your entire backPack object.
 */
 
 //Code here
-
+alert(backPack);
 
 
 /*
@@ -74,7 +91,7 @@ Instead, console.log your whole backPack object and then check out the console.
 */
 
 //Code here
-
+console.log(backPack);
 
 
 ////////// PROBLEM 4 //////////
@@ -98,7 +115,8 @@ var user2 = {
 
 //Code Here
 
-
+user2.name = 'Tyler S. McGinnis';
+user2.email = 'tyler.mcginnis@devmounta.in';
 
 
 
@@ -120,6 +138,7 @@ var user2 = {
 */
 
 //Code Here
+let methodCollection = {};
 
 
 
@@ -129,7 +148,13 @@ var user2 = {
 */
 
 //Code Here
+methodCollection.alertHello = () => {
+  alert('hello');
+}
 
+methodCollection.logHello = () => {
+  console.log('hello');
+}
 
 
 /*
@@ -137,6 +162,8 @@ var user2 = {
 */
 
 //Code Here
+methodCollection.alertHello();
+methodCollection.logHello();
 
 
 
@@ -148,7 +175,9 @@ var user2 = {
 */
 
 //Code Here
-
+const makePerson = (name, birthday, ssn) => {
+  return {name, birthday, ssn}
+}
 
 
 ////////// PROBLEM 7 //////////
@@ -160,4 +189,7 @@ var user2 = {
 
 //Code Here
 
+const makeCard = (cardNumber, expirationDate, securityCode) => {
+  return {cardNumber, expirationDate, securityCode}
+}
 
